@@ -1,7 +1,7 @@
 # Human Activity Recognition Using Smartphones Tidy Dataset
-### https://github.com/rogerfischer/harus_tidy
+https://github.com/rogerfischer/harus_tidy
 
-Overview
+## Overview
 
 * Dataset
 * Task
@@ -26,8 +26,8 @@ is prohibited.
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
 ## TASK
-
 You will be required to submit: 
+
 1. a tidy data set as described below, 
 2. a link to a Github repository with your script for performing the analysis, and 
 3. a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. 
@@ -46,9 +46,12 @@ This repo explains how all of the scripts work and how they are connected.
 ## DOWNLOAD AND UNZIP
 
 ### SETWD()
+```{r eval=FALSE}
 setwd("/Users/rogerfischer/datasciencecoursera/getdata/course_project")
+```
 
 ### DOWNLOAD THE FILE
+```{r eval=FALSE}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 # create the placeholder file
 file = "data.zip"
@@ -56,10 +59,13 @@ file = "data.zip"
 download.file(fileUrl, destfile = file, method = "curl")
 dateDownloaded <- date()
 # dateDownloaded  # "Sat Feb  7 17:11:46 2015"
+```
 
 ### UNZIP THE FILE
-# unzip the file to the zip directory
+Unzip the file to the zip directory
+```{r eval=FALSE}
 unzip(file, exdir = ".", overwrite = TRUE)
+```
 
 ## DIRECTORY STRUCTURE: UCI HAR Dataset
 * - README.txt    
@@ -101,26 +107,32 @@ test
 ```{r eval=FALSE}
 X_test <- read.table("UCI\ HAR\ Dataset/test/X_test.txt")
 dim(X_test)
-``` 2947  561
+``` 
+2947  561
 ```{r eval=FALSE}
 subject_test <- read.table("UCI\ HAR\ Dataset/test/subject_test.txt") 
 dim(subject_test)
-``` 2947    1
+``` 
+2947    1
 ```{r eval=FALSE}
 y_test <- read.table("UCI\ HAR\ Dataset/test/y_test.txt") # dim: 
 dim(y_test) 
-``` 2947    1
+``` 
+2947    1
 
 train
 ```{r eval=FALSE}
 X_train <- read.table("UCI\ HAR\ Dataset/train/X_train.txt")
 dim(X_train)
-``` 7352  561
+``` 
+7352  561
 ```{r eval=FALSE}
 subject_train <- read.table("UCI\ HAR\ Dataset/train/subject_train.txt")
 dim(subject_train)
-``` 7352    1
+``` 
+7352    1
 ```{r eval=FALSE}
 y_train <- read.table("UCI\ HAR\ Dataset/train/y_train.txt")
 dim(y_train)
-``` 7352    1 
+``` 
+7352    1 
