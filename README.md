@@ -2,12 +2,12 @@
 https://github.com/rogerfischer/harus_tidy
 
 ## Overview
-
 * Dataset
 * Task
 * Download and Unzip
 * Directory Structure
 * First Exploration of the Data
+
 
 ## Dataset
 [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#)
@@ -25,7 +25,8 @@ addressed to the authors or their institutions for its use or misuse. Any commer
 is prohibited.
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
-## TASK
+
+## Task
 You will be required to submit: 
 
 1. a tidy data set as described below, 
@@ -43,67 +44,68 @@ This repo explains how all of the scripts work and how they are connected.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
-## DOWNLOAD AND UNZIP
+## Download and Unzip
 
-### SETWD()
+### setwd()
 ```{r eval=FALSE}
 setwd("/Users/rogerfischer/datasciencecoursera/getdata/course_project")
 ```
 
-### DOWNLOAD THE FILE
+### Download the file
 ```{r eval=FALSE}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-# create the placeholder file
+# Create the placeholder file
 file = "data.zip"
-# download into the placeholder file
+# Download into the placeholder file
 download.file(fileUrl, destfile = file, method = "curl")
 dateDownloaded <- date()
 # dateDownloaded  # "Sat Feb  7 17:11:46 2015"
 ```
 
-### UNZIP THE FILE
+### Unzip the File
 Unzip the file to the zip directory
 ```{r eval=FALSE}
 unzip(file, exdir = ".", overwrite = TRUE)
 ```
 
+
 ## DIRECTORY STRUCTURE: UCI HAR Dataset
-* - README.txt    
-* - activity_labels.txt	
-* - features.txt		
-* - features_info.txt	
-* - test
-  *  -- X_test.txt  	
-  *  -- subject_test.txt
-  *  -- y_test.txt
-  * -- Inertial\ Signals
-    * --- body_acc_x_test.txt  
-    * --- body_acc_y_test.txt  
-    * --- body_acc_z_test.txt	
-    * --- body_gyro_x_test.txt
-    * --- body_gyro_y_test.txt
-    * --- body_gyro_z_test.txt
-    * --- total_acc_x_test.txt
-    * --- total_acc_y_test.tx
-    * --- total_acc_z_test.txt
-* - train
-  * -- X_train.txt  	
-  * -- subject_train.txt	
-  * -- y_train.txt
-  * -- Inertial\ Signals
-    * --- body_acc_x_train.txt
-    * --- body_acc_y_train.txt
-    * --- body_acc_z_train.txt  
-    * --- body_gyro_x_train.txt  
-    * --- body_gyro_y_train.txt  
-    * --- body_gyro_z_train.txt	
-    * --- total_acc_x_train.txt	
-    * --- total_acc_y_train.txt
-    * --- total_acc_z_train.txt
+* README.txt    
+* activity_labels.txt	
+* features.txt		
+* features_info.txt	
+* test
+  * X_test.txt  	
+  * subject_test.txt
+  * y_test.txt
+  * Inertial\ Signals
+    * body_acc_x_test.txt  
+    * body_acc_y_test.txt  
+    * body_acc_z_test.txt	
+    * body_gyro_x_test.txt
+    * body_gyro_y_test.txt
+    * body_gyro_z_test.txt
+    * total_acc_x_test.txt
+    * total_acc_y_test.tx
+    * total_acc_z_test.txt
+* train
+  * X_train.txt  	
+  * subject_train.txt	
+  * y_train.txt
+  * Inertial\ Signals
+    * body_acc_x_train.txt
+    * body_acc_y_train.txt
+    * body_acc_z_train.txt  
+    * body_gyro_x_train.txt  
+    * body_gyro_y_train.txt  
+    * body_gyro_z_train.txt	
+    * total_acc_x_train.txt	
+    * total_acc_y_train.txt
+    * total_acc_z_train.txt
 
 
 ## FIRST EXPLORATION OF THE DATA
-test
+### test
 ```{r eval=FALSE}
 X_test <- read.table("UCI\ HAR\ Dataset/test/X_test.txt")
 dim(X_test)
@@ -120,7 +122,7 @@ dim(y_test)
 ``` 
 2947    1
 
-train
+### train
 ```{r eval=FALSE}
 X_train <- read.table("UCI\ HAR\ Dataset/train/X_train.txt")
 dim(X_train)
