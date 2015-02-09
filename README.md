@@ -53,18 +53,19 @@ unzip(file, exdir = ".", overwrite = TRUE)
 
 
 ## Directory Structure: UCI HAR Dataset
+* README.txt and features_info.txt are files with explanations. 
+* The files activity_labels.txt and features.txt define the variable names for X_test and subject_test.txt
+* Explanations for the train set below work for the test set as well. 
+
 UCI\ HAR\ Dataset
 * README.txt    
 * activity_labels.txt  
 * features.txt		
 * features_info.txt	
 * test
-  * X_test.txt 
-  (Test set)  	
+  * X_test.txt 	
   * subject_test.txt 
-  (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.) 
   * y_test.txt 
-  (Test labels. See activity_labels.txt)
   * Inertial\ Signals
     * body_acc_x_test.txt  
     * body_acc_y_test.txt  
