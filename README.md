@@ -2,11 +2,11 @@
 https://github.com/rogerfischer/harus_tidy
 
 ## Overview
-* Dataset
-* Task
-* Download and Unzip
-* Directory Structure: UCI HAR Dataset
-* First Exploration of the Data
+* [Dataset](https://github.com/rogerfischer/harus_tidy#dataset)
+* [Download and Unzip](https://github.com/rogerfischer/harus_tidy#download-and-unzip)
+* [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset)
+* [Task](https://github.com/rogerfischer/harus_tidy#task)
+* [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data)
 
 
 ## Dataset
@@ -24,6 +24,68 @@ This dataset is distributed AS-IS and no responsibility implied or explicit can 
 addressed to the authors or their institutions for its use or misuse. Any commercial use
 is prohibited.
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
+
+
+## Download and Unzip
+
+### setwd()
+```{r eval=FALSE}
+setwd("/Users/rogerfischer/datasciencecoursera/getdata/course_project")
+```
+
+### Download the file
+```{r eval=FALSE}
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+# Create the placeholder file
+file = "data.zip"
+# Download into the placeholder file
+download.file(fileUrl, destfile = file, method = "curl")
+dateDownloaded <- date()
+# dateDownloaded  # "Sat Feb  7 17:11:46 2015"
+```
+
+### Unzip the File
+Unzip the file to the zip directory
+```{r eval=FALSE}
+unzip(file, exdir = ".", overwrite = TRUE)
+```
+
+
+## Directory Structure: UCI HAR Dataset
+UCI\ HAR\ Dataset
+* README.txt    
+* activity_labels.txt  
+* features.txt		
+* features_info.txt	
+* test
+  * X_test.txt  	
+  * subject_test.txt
+  * y_test.txt
+  * Inertial\ Signals
+    * body_acc_x_test.txt  
+    * body_acc_y_test.txt  
+    * body_acc_z_test.txt	
+    * body_gyro_x_test.txt
+    * body_gyro_y_test.txt
+    * body_gyro_z_test.txt
+    * total_acc_x_test.txt
+    * total_acc_y_test.tx
+    * total_acc_z_test.txt
+* train
+  * X_train.txt  	
+  * subject_train.txt	
+  * y_train.txt
+  * Inertial\ Signals
+    * body_acc_x_train.txt
+    * body_acc_y_train.txt
+    * body_acc_z_train.txt  
+    * body_gyro_x_train.txt  
+    * body_gyro_y_train.txt  
+    * body_gyro_z_train.txt	
+    * total_acc_x_train.txt	
+    * total_acc_y_train.txt
+    * total_acc_z_train.txt
 
 
 ## Task
@@ -159,67 +221,6 @@ This repo explains how all of the scripts work and how they are connected.
 3. Use descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
-
-## Download and Unzip
-
-### setwd()
-```{r eval=FALSE}
-setwd("/Users/rogerfischer/datasciencecoursera/getdata/course_project")
-```
-
-### Download the file
-```{r eval=FALSE}
-fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-# Create the placeholder file
-file = "data.zip"
-# Download into the placeholder file
-download.file(fileUrl, destfile = file, method = "curl")
-dateDownloaded <- date()
-# dateDownloaded  # "Sat Feb  7 17:11:46 2015"
-```
-
-### Unzip the File
-Unzip the file to the zip directory
-```{r eval=FALSE}
-unzip(file, exdir = ".", overwrite = TRUE)
-```
-
-
-## Directory Structure: UCI HAR Dataset
-UCI\ HAR\ Dataset
-* README.txt    
-* activity_labels.txt	
-* features.txt		
-* features_info.txt	
-* test
-  * X_test.txt  	
-  * subject_test.txt
-  * y_test.txt
-  * Inertial\ Signals
-    * body_acc_x_test.txt  
-    * body_acc_y_test.txt  
-    * body_acc_z_test.txt	
-    * body_gyro_x_test.txt
-    * body_gyro_y_test.txt
-    * body_gyro_z_test.txt
-    * total_acc_x_test.txt
-    * total_acc_y_test.tx
-    * total_acc_z_test.txt
-* train
-  * X_train.txt  	
-  * subject_train.txt	
-  * y_train.txt
-  * Inertial\ Signals
-    * body_acc_x_train.txt
-    * body_acc_y_train.txt
-    * body_acc_z_train.txt  
-    * body_gyro_x_train.txt  
-    * body_gyro_y_train.txt  
-    * body_gyro_z_train.txt	
-    * total_acc_x_train.txt	
-    * total_acc_y_train.txt
-    * total_acc_z_train.txt
 
 
 ## First Exploration of the Data
