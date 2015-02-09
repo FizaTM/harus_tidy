@@ -59,9 +59,9 @@ UCI\ HAR\ Dataset
 * features.txt		
 * features_info.txt	
 * test
-  * X_test.txt  	
-  * subject_test.txt
-  * y_test.txt
+  * X_test.txt (Test set)  	
+  * subject_test.txt (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.) 
+  * y_test.txt (Test labels. See activity_labels.txt)
   * Inertial\ Signals
     * body_acc_x_test.txt  
     * body_acc_y_test.txt  
@@ -73,9 +73,9 @@ UCI\ HAR\ Dataset
     * total_acc_y_test.tx
     * total_acc_z_test.txt
 * train
-  * X_train.txt  	
-  * subject_train.txt	
-  * y_train.txt
+  * X_train.txt (Train set) 	
+  * subject_train.txt	 (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. )
+  * y_train.txt (Training labels. See activity_labels.txt)
   * Inertial\ Signals
     * body_acc_x_train.txt
     * body_acc_y_train.txt
