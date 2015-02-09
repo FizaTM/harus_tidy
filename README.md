@@ -207,8 +207,18 @@ This repo explains how all of the scripts work and how they are connected.
    * 561 angle(Z,gravityMean)
    
 3. Use descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive variable names. 
+
+   Possible Solution:
+   * Use c("walking", "walking_upstairs", "walking_downstairs", "sitting", "standing", "lying")
+   instead of 1:6. See activity_labels.txt
+   
+4. Appropriately labels the data set with descriptive variable names.
+   
+   Possible Solution:
+   * Use variables names from features.txt instead of V1:V561
+   
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+   
 
 
 ## First Exploration of the Data
