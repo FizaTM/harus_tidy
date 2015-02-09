@@ -74,16 +74,21 @@ UCI\ HAR\ Dataset
     * total_acc_z_test.txt
 * train
   * X_train.txt (Train set) 	
-  * subject_train.txt	 (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. )
-  * y_train.txt (Training labels. See activity_labels.txt)
+  * subject_train.txt	 
+  (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. )
+  * y_train.txt 
+  (Training labels. See activity_labels.txt)
   * Inertial\ Signals
-    * body_acc_x_train.txt
+    * body_acc_x_train.txt 
+    (The body acceleration signal obtained by subtracting the gravity from the total acceleration. )  
     * body_acc_y_train.txt
     * body_acc_z_train.txt  
     * body_gyro_x_train.txt  
+    (The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.)
     * body_gyro_y_train.txt  
     * body_gyro_z_train.txt	
     * total_acc_x_train.txt	
+    (The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.)
     * total_acc_y_train.txt
     * total_acc_z_train.txt
 
@@ -99,8 +104,9 @@ This repo explains how all of the scripts work and how they are connected.
 
 ### Tidy Dataset
 1. Merge the training and the test sets to create one data set.
-   Solution:
-   * Probable solution: merged data frame <- rbind(data frame test, data frame train)
+
+   Possible Solution:
+   * Rows with rbind: merged data frame <- rbind(data frame test, data frame train)
    * Check also merge()
 2. Extract only the measurements on the mean and standard deviation for each measurement.
    Solution:
