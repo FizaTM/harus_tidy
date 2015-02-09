@@ -1,4 +1,5 @@
 # Human Activity Recognition Using Smartphones Tidy Dataset
+### https://github.com/rogerfischer/harus_tidy
 
 Overview
 
@@ -27,19 +28,19 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 ## TASK
 
 You will be required to submit: 
-1) a tidy data set as described below, 
-2) a link to a Github repository with your script for performing the analysis, and 
-3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. 
-4) You should also include a README.md in the repo with your scripts. 
+1. a tidy data set as described below, 
+2. a link to a Github repository with your script for performing the analysis, and 
+3. a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. 
+4. You should also include a README.md in the repo with your scripts. 
 This repo explains how all of the scripts work and how they are connected.  
 
 ### TIDY DATASET
-1) Merge the training and the test sets to create one data set.
+1. Merge the training and the test sets to create one data set.
    Probable solution: merged data frame <- rbind(data frameA, data frameB)
-2) Extract only the measurements on the mean and standard deviation for each measurement. 
-3) Use descriptive activity names to name the activities in the data set
-4) Appropriately labels the data set with descriptive variable names. 
-5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+2. Extract only the measurements on the mean and standard deviation for each measurement. 
+3. Use descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
 ## DOWNLOAD AND UNZIP
@@ -66,60 +67,60 @@ unzip(file, exdir = ".", overwrite = TRUE)
 * - features.txt		
 * - features_info.txt	
 * - test
-**  -- X_test.txt  	
-**  -- subject_test.txt
-**  -- y_test.txt
-** -- Inertial\ Signals
-*** --- body_acc_x_test.txt  
-*** --- body_acc_y_test.txt  
-*** --- body_acc_z_test.txt	
-*** --- body_gyro_x_test.txt
-*** --- body_gyro_y_test.txt
-*** --- body_gyro_z_test.txt
-*** --- total_acc_x_test.txt
-*** --- total_acc_y_test.tx
-*** --- total_acc_z_test.txt
+  *  -- X_test.txt  	
+  *  -- subject_test.txt
+  *  -- y_test.txt
+  * -- Inertial\ Signals
+    * --- body_acc_x_test.txt  
+    * --- body_acc_y_test.txt  
+    * --- body_acc_z_test.txt	
+    * --- body_gyro_x_test.txt
+    * --- body_gyro_y_test.txt
+    * --- body_gyro_z_test.txt
+    * --- total_acc_x_test.txt
+    * --- total_acc_y_test.tx
+    * --- total_acc_z_test.txt
 * - train
-** -- X_train.txt  	
-** -- subject_train.txt	
-** -- y_train.txt
-** -- Inertial\ Signals
-*** --- body_acc_x_train.txt
-*** --- body_acc_y_train.txt
-*** --- body_acc_z_train.txt  
-*** --- body_gyro_x_train.txt  
-*** --- body_gyro_y_train.txt  
-*** --- body_gyro_z_train.txt	
-*** --- total_acc_x_train.txt	
-*** --- total_acc_y_train.txt
-*** --- total_acc_z_train.txt
+  * -- X_train.txt  	
+  * -- subject_train.txt	
+  * -- y_train.txt
+  * -- Inertial\ Signals
+    * --- body_acc_x_train.txt
+    * --- body_acc_y_train.txt
+    * --- body_acc_z_train.txt  
+    * --- body_gyro_x_train.txt  
+    * --- body_gyro_y_train.txt  
+    * --- body_gyro_z_train.txt	
+    * --- total_acc_x_train.txt	
+    * --- total_acc_y_train.txt
+    * --- total_acc_z_train.txt
 
 
 ## FIRST EXPLORATION OF THE DATA
-#test
+test
+```{r eval=FALSE}
 X_test <- read.table("UCI\ HAR\ Dataset/test/X_test.txt")
 dim(X_test)
-# 2947  561
+``` 2947  561
+```{r eval=FALSE}
 subject_test <- read.table("UCI\ HAR\ Dataset/test/subject_test.txt") 
 dim(subject_test)
-# 2947    1
+``` 2947    1
+```{r eval=FALSE}
 y_test <- read.table("UCI\ HAR\ Dataset/test/y_test.txt") # dim: 
-dim(y_test)
-# 2947    1
+dim(y_test) 
+``` 2947    1
 
-#train
+train
 ```{r eval=FALSE}
 X_train <- read.table("UCI\ HAR\ Dataset/train/X_train.txt")
 dim(X_train)
-```
-# 7352  561
+``` 7352  561
 ```{r eval=FALSE}
 subject_train <- read.table("UCI\ HAR\ Dataset/train/subject_train.txt")
 dim(subject_train)
-```
-# 7352    1
-```{r}
+``` 7352    1
+```{r eval=FALSE}
 y_train <- read.table("UCI\ HAR\ Dataset/train/y_train.txt")
 dim(y_train)
-```
-# 7352    1# 
+``` 7352    1 
