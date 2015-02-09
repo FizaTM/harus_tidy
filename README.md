@@ -8,6 +8,7 @@ https://github.com/rogerfischer/harus_tidy
 * [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset)
 * [Task](https://github.com/rogerfischer/harus_tidy#task)
 * [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data)
+* [Steps 1-5](https://github.com/rogerfischer/harus_tidy#steps-1-5)
 
 
 ## Getting and Cleaning Data Course Project
@@ -285,5 +286,5 @@ dim(body_acc_x_train)
 
 ## Steps 1-5
 ### 1. Merge the training and the test sets to create one data set.
-Use run_analysis.R, steps 1.1. to 3.1. 
+Use [run_analysis.R](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R), steps 1.1. to 3.1. 
 First cbind subject, y and X, then rbind train and test to get to X, the complete dataset with 10'299 observations and 563 variables
