@@ -260,7 +260,7 @@ dim(body_acc_x_test)
 ``` 
 
 ### train
-```{r eval=FALSE}
+```{r}
 X_train <- read.table("UCI\ HAR\ Dataset/train/X_train.txt")
 dim(X_train)
 # 7352  561
