@@ -16,6 +16,10 @@ The purpose of this project is to demonstrate the ability to collect, work with,
 
 
 ## Dataset
+Zipped data for the project: 
+[https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+
+From:
 [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#)
 
 ### License:
@@ -278,3 +282,8 @@ body_acc_x_train <- read.table("UCI\ HAR\ Dataset/train/Inertial\ Signals/body_a
 dim(body_acc_x_train)
 # 7352  128
 ``` 
+
+## Steps 1-5
+### 1. Merge the training and the test sets to create one data set.
+Use run_analysis.R, steps 1.1. to 3.1. 
+First cbind subject, y and X, then rbind train and test to get to X, the complete dataset with 10'299 observations and 563 variables
