@@ -2,7 +2,7 @@
 https://github.com/rogerfischer/harus_tidy
 
 ## Overview
-* [Getting and Cleaning Data Course Project]
+* [Getting and Cleaning Data Course Project](https://github.com/rogerfischer/harus_tidy#getting-and-cleaning-data-course-project)
 * [Dataset](https://github.com/rogerfischer/harus_tidy#dataset)
 * [Download and Unzip](https://github.com/rogerfischer/harus_tidy#download-and-unzip)
 * [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset)
@@ -11,7 +11,7 @@ https://github.com/rogerfischer/harus_tidy
 
 
 ## Getting and Cleaning Data Course Project
-From [https://class.coursera.org/getdata-011/](https://class.coursera.org/getdata-011/)
+From [https://class.coursera.org/getdata-011/](https://class.coursera.org/getdata-011/). 
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. 
 
 
