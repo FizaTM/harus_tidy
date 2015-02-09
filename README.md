@@ -2,11 +2,17 @@
 https://github.com/rogerfischer/harus_tidy
 
 ## Overview
+* [Getting and Cleaning Data Course Project]
 * [Dataset](https://github.com/rogerfischer/harus_tidy#dataset)
 * [Download and Unzip](https://github.com/rogerfischer/harus_tidy#download-and-unzip)
 * [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset)
 * [Task](https://github.com/rogerfischer/harus_tidy#task)
 * [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data)
+
+
+## Getting and Cleaning Data Course Project
+From [https://class.coursera.org/getdata-011/](https://class.coursera.org/getdata-011/)
+The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. 
 
 
 ## Dataset
@@ -57,7 +63,7 @@ unzip(file, exdir = ".", overwrite = TRUE)
 * The files activity_labels.txt and features.txt define the variable names for X_test and subject_test.txt
 * Explanations for the train set below work for the test set as well. 
 
-UCI\ HAR\ Dataset
+### UCI\ HAR\ Dataset
 * README.txt    
 * activity_labels.txt  
 * features.txt		
