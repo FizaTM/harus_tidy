@@ -289,4 +289,5 @@ dim(body_acc_x_train)
 Use [run_analysis.R](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R), steps 1.1. to 3.1. 
 First cbind X, y and subject (the latter two at the end to keep the variable order the same as the variable names), then rbind train and test to get to X, the complete dataset with 10'299 observations and 563 variables
 
-### 2. 
+### 2. Extract only the measurements on the mean and standard deviation for each measurement. 
+See [Mean and SD variables](https://github.com/rogerfischer/harus_tidy#tidy-dataset)
