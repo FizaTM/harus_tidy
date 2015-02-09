@@ -1,4 +1,4 @@
-# Human Activity Recognition Using Smartphones
+# Human Activity Recognition Using Smartphones Tidy Dataset
 
 Overview
 
@@ -11,8 +11,7 @@ Overview
 ## Dataset
 [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#)
 
-License:
-========
+### License:
 Use of this dataset in publications must be acknowledged by referencing the following 
 publication [1] 
 
@@ -109,12 +108,18 @@ dim(y_test)
 # 2947    1
 
 #train
+```{r eval=FALSE}
 X_train <- read.table("UCI\ HAR\ Dataset/train/X_train.txt")
 dim(X_train)
+```
 # 7352  561
+```{r eval=FALSE}
 subject_train <- read.table("UCI\ HAR\ Dataset/train/subject_train.txt")
 dim(subject_train)
+```
 # 7352    1
+```{r}
 y_train <- read.table("UCI\ HAR\ Dataset/train/y_train.txt")
 dim(y_train)
-# 7352    1# harus_tidy
+```
+# 7352    1# 
