@@ -230,8 +230,9 @@ This repo explains how all of the scripts work and how they are connected.
    * Use variables names from features.txt instead of V1:V561
    
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-   
 
+6. Please upload the tidy data set created in step 5 of the instructions. Please upload your data set as a txt file created with write.table() using row.name=FALSE.
+   
 
 ## First Exploration of the Data
 ### test
@@ -260,7 +261,7 @@ dim(body_acc_x_test)
 ``` 
 
 ### train
-```{r}
+```{r eval=FALSE}
 X_train <- read.table("UCI\ HAR\ Dataset/train/X_train.txt")
 dim(X_train)
 # 7352  561
