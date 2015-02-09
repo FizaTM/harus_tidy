@@ -3,7 +3,7 @@
 ## setwd("/Users/rogerfischer/datasciencecoursera/getdata/course_project")
 
 # 1. Merge the training and the test sets to create one data set.
-## First cbind subject, y and X, then rbind test and train to get to X
+## First cbind subject, y and X, then rbind train and test to get to X
 
 ## 1.1. Traindata
 X_train <- read.table("UCI\ HAR\ Dataset/train/X_train.txt")

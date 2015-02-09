@@ -206,7 +206,7 @@ This repo explains how all of the scripts work and how they are connected.
       * (526 fBodyBodyAccJerkMag-meanFreq())
    * 529 fBodyBodyGyroMag-mean()
    * 530 fBodyBodyGyroMag-std()
-   * 539 fBodyBodyGyroMag-meanFreq()
+      * (539 fBodyBodyGyroMag-meanFreq())
    * 542 fBodyBodyGyroJerkMag-mean()
    * 543 fBodyBodyGyroJerkMag-std()
       * (552 fBodyBodyGyroJerkMag-meanFreq())
@@ -287,4 +287,6 @@ dim(body_acc_x_train)
 ## Steps 1-5
 ### 1. Merge the training and the test sets to create one data set.
 Use [run_analysis.R](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R), steps 1.1. to 3.1. 
-First cbind subject, y and X, then rbind train and test to get to X, the complete dataset with 10'299 observations and 563 variables
+First cbind X, y and subject (the latter two at the end to keep the variable order the same as the variable names), then rbind train and test to get to X, the complete dataset with 10'299 observations and 563 variables
+
+### 2. 
