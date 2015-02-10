@@ -292,3 +292,12 @@ First cbind X, y and subject (the latter two at the end to keep the variable ord
 
 ### 2. Extract only the measurements on the mean and standard deviation for each measurement. 
 See [Mean and SD variables](https://github.com/rogerfischer/harus_tidy#tidy-dataset)
+Create a vector of all variables, then make a selection with these variables on X.
+
+### 3. Use descriptive activity names to name the activities in the data set
+msdX$V1.1[msdX$V1.1 == 1] <- "walking" etc.
+
+### 4. Appropriately labels the data set with descriptive variable names.
+   
+   Possible Solution:
+   * Use variables names from features.txt instead of V1:V561
