@@ -90,3 +90,14 @@ msdf2as <- c(msdf2, as)
 ## 4.3. Apply to variables
 colnames(msdX) <- msdf2as
 
+
+# 5. From the data set in step 4, creates a second, independent tidy data set with the average 
+# of each variable for each activity and each subject.
+
+## 5.1. Using sapply to get the mean of every variable, except for activity which will return NA
+data_up <- sapply(msdX, mean)
+
+# 6.Please upload the tidy data set created in step 5 of the instructions. Please upload your 
+# data set as a txt file created with write.table() using row.name=FALSE.
+write.table(data_up, file = "data_up.txt", row.name=FALSE, col.names = TRUE)
+
