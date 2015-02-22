@@ -103,13 +103,13 @@ data_up <- group_by(msdX, subject, activity) %>%
 
 # 6.Please upload the tidy data set created in step 5 of the instructions. Please upload your 
 # data set as a txt file created with write.table() using row.name=FALSE.
-write.table(data_up, file = "data_up.txt", row.names = FALSE, col.names = TRUE)
+write.table(data_up, file = "tidy.txt", row.names = FALSE, col.names = TRUE, sep = "\t")
 
 # Alternativly, as CSV file: 
-# write.table(data_up, file = "data_up.csv", row.names = FALSE, col.names = TRUE, sep = "\t")
+# write.table(data_up, file = "tidy.csv", row.names = FALSE, col.names = TRUE, sep = "\t")
 
 
 # 7. Read the data back in with read.table
-# data_down <- read.table("data_up.txt", header = TRUE)
+# data_down <- read.table("tidy.txt", header = TRUE)
 # head(data_down)
 # tail(data_down)
