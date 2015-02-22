@@ -2,7 +2,7 @@
 https://github.com/rogerfischer/harus_tidy
 
 The [dataset](https://github.com/rogerfischer/harus_tidy#dataset) is first explored in [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset).
-Then the [task](https://github.com/rogerfischer/harus_tidy#task) is explained. The follows a [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data).
+Then the [task](https://github.com/rogerfischer/harus_tidy#task) is explained. Then follows a [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data).
 
 The [run_analysis.R script](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R) performs all important transformations of the data, which are detailed in [Solution: Steps 1-5 & Upload as text file](https://github.com/rogerfischer/harus_tidy#solution-steps-1-5--upload-as-text-file). 
 
@@ -296,9 +296,7 @@ Use y_test.txt for activities
 msdX$V1.1[msdX$V1.1 == 1] <- "walking" etc.
 
 ### 4. Appropriately labels the data set with descriptive variable names.
-4.1. Read features from features.txt
-4.2. Use only Mean and SD variables from features.txt and add activity and suject
-4.3. Apply to variables of the dataset
+Read features from features.txt. Use only Mean and SD variables from features.txt and add activity and suject. Apply to variables of the dataset.
 
 ### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 Using group_by and summarise to get the mean of every variable/column by subject and activity
