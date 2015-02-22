@@ -8,7 +8,7 @@ https://github.com/rogerfischer/harus_tidy
 * [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset)
 * [Task](https://github.com/rogerfischer/harus_tidy#task)
 * [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data)
-* [Solution: Steps 1-5](https://github.com/rogerfischer/harus_tidy#steps-1-5)
+* [Solution: Steps 1-5 & Upload as text file](https://github.com/rogerfischer/harus_tidy#solution-steps-1-5--upload-as-text-file)
 
 
 ## Getting and Cleaning Data Course Project
@@ -294,8 +294,7 @@ msdX$V1.1[msdX$V1.1 == 1] <- "walking" etc.
 4.2. Use only Mean and SD variables from features.txt and add activity and suject
 4.3. Apply to variables of the dataset
 
-### 5. From the data set in step 4, creates a second, independent tidy data set with the average 
-### of each variable for each activity and each subject.
+### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 Using group_by and summarise to get the mean of every variable/column by subject and activity
 
 ### 6. Please upload the tidy data set created in step 5 of the instructions. 
