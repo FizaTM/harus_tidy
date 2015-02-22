@@ -8,7 +8,7 @@ https://github.com/rogerfischer/harus_tidy
 * [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset)
 * [Task](https://github.com/rogerfischer/harus_tidy#task)
 * [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data)
-* [Steps 1-5](https://github.com/rogerfischer/harus_tidy#steps-1-5)
+* [Solution: Steps 1-5](https://github.com/rogerfischer/harus_tidy#steps-1-5)
 
 
 ## Getting and Cleaning Data Course Project
@@ -120,10 +120,6 @@ This repo explains how all of the scripts work and how they are connected.
 
 ### Tidy Dataset
 1. Merge the training and the test sets to create one data set.
-
-   Possible Solution:
-   * Rows with rbind: merged data frame <- rbind(data frame test, data frame train)
-   * Check also merge()
 2. Extract only the measurements on the mean and standard deviation for each measurement.
    Solution:
    
@@ -219,14 +215,9 @@ This repo explains how all of the scripts work and how they are connected.
    * 561 angle(Z,gravityMean)
    
 3. Use descriptive activity names to name the activities in the data set
-
-   Possible Solution:
-   * Use c("walking", "walking_upstairs", "walking_downstairs", "sitting", "standing", "lying")
-   instead of 1:6. See activity_labels.txt
+   See activity_labels.txt
    
 4. Appropriately labels the data set with descriptive variable names.
-   
-   Possible Solution:
    * Use variables names from features.txt instead of V1:V561
    
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
@@ -285,7 +276,7 @@ dim(body_acc_x_train)
 # 7352  128
 ``` 
 
-## Steps 1-5
+## Solution: Steps 1-5 & Upload as text file
 ### 1. Merge the training and the test sets to create one data set.
 Use [run_analysis.R](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R), steps 1.1. to 3.1. 
 First cbind X, y and subject (the latter two at the end to keep the variable order the same as the variable names), then rbind train and test to get to X, the complete dataset with 10'299 observations and 563 variables
@@ -295,9 +286,19 @@ See [Mean and SD variables](https://github.com/rogerfischer/harus_tidy#tidy-data
 Create a vector of all variables, then make a selection with these variables on X.
 
 ### 3. Use descriptive activity names to name the activities in the data set
+Use y_test.txt for activities
 msdX$V1.1[msdX$V1.1 == 1] <- "walking" etc.
 
 ### 4. Appropriately labels the data set with descriptive variable names.
-   
-   Possible Solution:
-   * Use variables names from features.txt instead of V1:V561
+4.1. Read features from features.txt
+4.2. Use only Mean and SD variables from features.txt and add activity and suject
+4.3. Apply to variables of the dataset
+
+### 5. From the data set in step 4, creates a second, independent tidy data set with the average 
+### of each variable for each activity and each subject.
+Using group_by and summarise to get the mean of every variable/column by subject and activity
+
+### 6. Please upload the tidy data set created in step 5 of the instructions. 
+```{r eval=FALSE}
+write.table(data_up, file = "data_up.txt", row.names = FALSE, col.names = TRUE, sep = "\t")
+``` 
