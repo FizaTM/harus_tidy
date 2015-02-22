@@ -1,10 +1,10 @@
 # Human Activity Recognition Using Smartphones Tidy Dataset
-https://github.com/rogerfischer/harus_tidy
+
 
 The [dataset](https://github.com/rogerfischer/harus_tidy#dataset) is first explored in [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset).
 Then the [task](https://github.com/rogerfischer/harus_tidy#task) is explained. Then follows a [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data).
 
-The [run_analysis.R script](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R) performs all important transformations of the data, which are detailed in [Solution: Steps 1-5 & Upload as text file](#solution-steps-1-5--upload-as-text-file). 
+The [run_analysis.R script](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R) performs all important transformations of the data, which are detailed in [Solution: Steps 1-6](#solution-steps-1-5--upload-as-text-file). 
 
 
 ## Overview
@@ -14,7 +14,7 @@ The [run_analysis.R script](https://github.com/rogerfischer/harus_tidy/blob/mast
 * [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset)
 * [Task](https://github.com/rogerfischer/harus_tidy#task)
 * [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data)
-* [Solution: Steps 1-5 & Upload as text file](https://github.com/rogerfischer/harus_tidy#solution-steps-1-5--upload-as-text-file)
+* [Solution: Steps 1-6](https://github.com/rogerfischer/harus_tidy#solution-steps-1-5--upload-as-text-file)
 
 
 ## Getting and Cleaning Data Course Project
@@ -282,7 +282,7 @@ dim(body_acc_x_train)
 # 7352  128
 ``` 
 
-## Solution: Steps 1-5 & Upload as text file
+## Solution: Steps 1-6
 ### 1. Merge the training and the test sets to create one data set.
 Use [run_analysis.R](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R), steps 1.1. to 3.1. 
 First cbind X, y and subject (the latter two at the end to keep the variable order the same as the variable names), then rbind train and test to get to X, the complete dataset with 10'299 observations and 563 variables
