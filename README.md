@@ -1,6 +1,12 @@
 # Human Activity Recognition Using Smartphones Tidy Dataset
 https://github.com/rogerfischer/harus_tidy
 
+The [dataset](https://github.com/rogerfischer/harus_tidy#dataset) is first explored in [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset).
+Then the [task](https://github.com/rogerfischer/harus_tidy#task) is explained. The follows a [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data).
+
+The [run_analysis.R script](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R) performs all important transformations of the data, which are detailed in [Solution: Steps 1-5 & Upload as text file](https://github.com/rogerfischer/harus_tidy#solution-steps-1-5--upload-as-text-file). 
+
+
 ## Overview
 * [Getting and Cleaning Data Course Project](https://github.com/rogerfischer/harus_tidy#getting-and-cleaning-data-course-project)
 * [Dataset](https://github.com/rogerfischer/harus_tidy#dataset)
