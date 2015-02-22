@@ -307,3 +307,4 @@ Using group_by and summarise to get the mean of every variable/column by subject
 ```{r eval=FALSE}
 write.table(data_up, file = "tidy.txt", row.names = FALSE, col.names = TRUE, sep = "\t")
 ``` 
+[tidy.txt](https://github.com/rogerfischer/harus_tidy/blob/master/tidy.txt)
