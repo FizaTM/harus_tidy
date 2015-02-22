@@ -29,7 +29,7 @@ We change the numbers from y_test.txt/y_train.txt (now the variable activity) to
 
 
 ## Independent tidy dataset
-From the final tidy data set, we create a second, independent tidy data set with the average of each variable for each activity and each subject.
+From the final tidy data set, we create a second, independent tidy data set with the average of each variable for each activity and each subject: 
 [tidy.txt](https://github.com/rogerfischer/harus_tidy/blob/master/tidy.txt)
 
 More information is available in the [ReadMe](https://github.com/rogerfischer/harus_tidy/blob/master/README.md).
