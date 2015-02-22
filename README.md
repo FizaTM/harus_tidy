@@ -6,6 +6,8 @@ Then the [task](https://github.com/rogerfischer/harus_tidy#task) or the problem 
 
 The [run_analysis.R script](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R) performs all important transformations on the dataset. The steps  are detailed in [Solution: Steps 1-6](https://github.com/rogerfischer/harus_tidy#solution-steps-1-6) as well as in the comments of the [R script](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R). 
 
+See also the [CodeBook](https://github.com/rogerfischer/harus_tidy/blob/master/CodeBook.md) describing the variables, the data, and any transformations or work that was performed to clean up the data. 
+
 
 ## Overview
 * [Getting and Cleaning Data Course Project](https://github.com/rogerfischer/harus_tidy#getting-and-cleaning-data-course-project)
