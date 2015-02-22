@@ -94,18 +94,22 @@ colnames(msdX) <- msdf2as
 # 5. From the data set in step 4, creates a second, independent tidy data set with the average 
 # of each variable for each activity and each subject.
 
-## 5.1. Using sapply to get the mean of every variable, except for activity which will return NA
-data_up <- apply(msdX, 2, function(x) mean(as.numeric(as.character(x)))) 
-# Or data_up <- sapply(msdX, mean)
+
+# 5.1. Using group_by and summarise to get the mean of every variable/column by subject and 
+# activity
+data_up <- group_by(msdX, subject, activity) %>%
+           summarise_each(funs(mean))
 
 
 # 6.Please upload the tidy data set created in step 5 of the instructions. Please upload your 
 # data set as a txt file created with write.table() using row.name=FALSE.
 write.table(data_up, file = "data_up.txt", row.names = FALSE, col.names = TRUE)
-# => Check why col.names does not work
+
+# Alternativly, as CSV file: 
+# write.table(data_up, file = "data_up.csv", row.names = FALSE, col.names = TRUE, sep = "\t")
 
 
 # 7. Read the data back in with read.table
-data_down <- read.table("data_up.txt", header = TRUE)
-head(data_down)
-tail(data_down)
+# data_down <- read.table("data_up.txt", header = TRUE)
+# head(data_down)
+# tail(data_down)
