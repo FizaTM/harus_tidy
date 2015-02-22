@@ -1,10 +1,10 @@
 # Human Activity Recognition Using Smartphones Tidy Dataset
 
 
-The [dataset](https://github.com/rogerfischer/harus_tidy#dataset) is first explored in [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset).
-Then the [task](https://github.com/rogerfischer/harus_tidy#task) is explained. Then follows a [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data).
+The structure of the [dataset](https://github.com/rogerfischer/harus_tidy#dataset) is described in [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset).
+Then the [task](https://github.com/rogerfischer/harus_tidy#task) or the problem to solve is defined. This is followed by a [first exploration of the data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data).
 
-The [run_analysis.R script](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R) performs all important transformations of the data, which are detailed in [Solution: Steps 1-6](#solution-steps-1-5--upload-as-text-file). 
+The [run_analysis.R script](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R) performs all important transformations on the dataset. The steps  are detailed in [Solution: Steps 1-6](https://github.com/rogerfischer/harus_tidy#solution-steps-1-6) as well as in the comments of the [R script](https://github.com/rogerfischer/harus_tidy/blob/master/run_analysis.R). 
 
 
 ## Overview
@@ -14,7 +14,7 @@ The [run_analysis.R script](https://github.com/rogerfischer/harus_tidy/blob/mast
 * [Directory Structure: UCI HAR Dataset](https://github.com/rogerfischer/harus_tidy#directory-structure-uci-har-dataset)
 * [Task](https://github.com/rogerfischer/harus_tidy#task)
 * [First Exploration of the Data](https://github.com/rogerfischer/harus_tidy#first-exploration-of-the-data)
-* [Solution: Steps 1-6](https://github.com/rogerfischer/harus_tidy#solution-steps-1-5--upload-as-text-file)
+* [Solution: Steps 1-6](https://github.com/rogerfischer/harus_tidy#solution-steps-1-6)
 
 
 ## Getting and Cleaning Data Course Project
